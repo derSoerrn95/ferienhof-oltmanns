@@ -1,0 +1,28 @@
+baseURL = "https://ferienhof-oltmanns.com/"
+languageCode = "de-DE"
+defaultContentLanguage = "de"
+title = "Ferienhof Oltmanns — Urlaub in Ostfriesland an der Nordsee"
+
+[params]
+  description = "Ferienwohnungen auf einem familiengeführten Bauernhof bei Esens in Ostfriesland. Ruhige Landluft, Nähe zur Nordsee, Landwirtschaft zum Anfassen."
+  author = "Familie Oltmanns"
+  location = "Esens, Ostfriesland"
+  phone = ""
+  email = "Johann.Oltmanns@T-Online.de"
+  tagline = "Nordseeurlaub auf dem Bauernhof"
+
+[params.contact]
+  email = "Johann.Oltmanns@T-Online.de"
+  locality = "Esens"
+  region = "Ostfriesland"
+  country = "Deutschland"
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[outputs]
+  home = ["HTML", "RSS"]
+
+disableKinds = ["taxonomy", "term"]
+
+[taxonomies]

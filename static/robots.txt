@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ferienhof-oltmanns.com/sitemap.xml

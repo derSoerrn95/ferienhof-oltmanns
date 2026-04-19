@@ -1,0 +1,284 @@
+{{ define "main" }}
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="willkommen">
+  <div class="hero__media" aria-hidden="true">
+    <div class="hero__gradient"></div>
+    <div class="hero__grain"></div>
+  </div>
+
+  <div class="hero__inner">
+    <p class="hero__kicker">
+      <span class="hero__kicker-dot" aria-hidden="true"></span>
+      Ostfriesland · an der südlichen Nordsee
+    </p>
+
+    <h1 class="hero__title">
+      <span class="hero__title-line">Ein ruhiger</span>
+      <span class="hero__title-line hero__title-line--accent"><em>Nordsee-Urlaub</em></span>
+      <span class="hero__title-line">zwischen Wiesen &amp; Deich.</span>
+    </h1>
+
+    <p class="hero__lede">
+      Vier Ferienwohnungen auf einem familiengeführten Bauernhof am Stadtrand von Esens — mit frischer Seeluft, Weidevieh vor dem Fenster und der Nordsee nur wenige Minuten entfernt.
+    </p>
+
+    <div class="hero__actions">
+      <a href="#wohnungen" class="btn btn--primary">
+        <span>Wohnungen ansehen</span>
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
+      </a>
+      <a href="mailto:{{ .Site.Params.email }}" class="btn btn--ghost">Anfragen</a>
+    </div>
+
+    <dl class="hero__facts">
+      <div>
+        <dt>Wohnungen</dt><dd>4</dd>
+      </div>
+      <div>
+        <dt>Zur Nordsee</dt><dd>~7 Min.</dd>
+      </div>
+      <div>
+        <dt>Geöffnet</dt><dd>ganzjährig</dd>
+      </div>
+    </dl>
+  </div>
+
+  <a href="#willkommens-text" class="hero__scroll" aria-label="Weiter scrollen">
+    <span></span>
+  </a>
+</section>
+
+<!-- ============ INTRO ============ -->
+<section class="intro" id="willkommens-text">
+  <div class="intro__inner">
+    <p class="section-kicker">— Willkommen</p>
+    <p class="intro__text">
+      Der <strong>Ferienhof Oltmanns</strong> bietet Ihnen einen ruhigen und erholsamen Urlaub in ländlicher Umgebung. In der anerkannt guten und frischen Nordseeluft am nördlichen Stadtrand von Esens liegt unser neuerbauter und neueingerichteter Ferienhof — ein Ort, an dem Sie Landwirtschaft noch <em>live</em> miterleben können.
+    </p>
+    <p class="intro__signature">— Familie Oltmanns</p>
+  </div>
+</section>
+
+<!-- ============ APARTMENTS ============ -->
+<section class="apartments" id="wohnungen">
+  <div class="apartments__header">
+    <p class="section-kicker">— Unsere Wohnungen</p>
+    <h2 class="section-title">Vier Ferienwohnungen,<br>eine gemeinsame Ruhe.</h2>
+    <p class="section-lede">
+      Alle Wohnungen verfügen über eine Wohnküche, Dusche/WC und zwei getrennte Schlafzimmer. Die Wohnküchen sind zur Selbstverpflegung gut ausgestattet — Wasserkocher, Kaffeemaschine, Toaster und Eierkocher gehören zur Standardausstattung.
+    </p>
+  </div>
+
+  <div class="apartments__grid">
+
+    <!-- FEWO 1 EG -->
+    <article class="apt-card apt-card--lg">
+      <div class="apt-card__badge">Erdgeschoss</div>
+      <h3 class="apt-card__title">Ferienwohnung 1 <span>EG</span></h3>
+      <p class="apt-card__size">55&thinsp;m²</p>
+      <ul class="apt-card__features">
+        <li>Wohnküche</li>
+        <li>2 getrennte Schlafzimmer</li>
+        <li>Dusche, WC</li>
+        <li>Separates Gäste-WC</li>
+      </ul>
+      <div class="apt-card__plan" aria-hidden="true">
+        <svg viewBox="0 0 200 140" fill="none" stroke="currentColor" stroke-width="1.2">
+          <rect x="4" y="4" width="192" height="132" rx="2"/>
+          <line x1="4" y1="60" x2="110" y2="60"/>
+          <line x1="110" y1="4" x2="110" y2="136"/>
+          <line x1="155" y1="60" x2="155" y2="136"/>
+          <text x="55" y="36" font-size="9" fill="currentColor" stroke="none" text-anchor="middle">Wohnküche</text>
+          <text x="57" y="100" font-size="8" fill="currentColor" stroke="none" text-anchor="middle">Eltern</text>
+          <text x="130" y="36" font-size="8" fill="currentColor" stroke="none" text-anchor="middle">Kind</text>
+          <text x="130" y="100" font-size="8" fill="currentColor" stroke="none" text-anchor="middle">Bad</text>
+          <text x="175" y="100" font-size="7" fill="currentColor" stroke="none" text-anchor="middle">WC</text>
+        </svg>
+      </div>
+    </article>
+
+    <!-- FEWO 2 EG -->
+    <article class="apt-card">
+      <div class="apt-card__badge">Erdgeschoss</div>
+      <h3 class="apt-card__title">Ferienwohnung 2 <span>EG</span></h3>
+      <p class="apt-card__size">45&thinsp;m²</p>
+      <ul class="apt-card__features">
+        <li>Wohnküche</li>
+        <li>2 getrennte Schlafzimmer</li>
+        <li>Dusche, WC</li>
+      </ul>
+    </article>
+
+    <!-- FEWO 1 OG -->
+    <article class="apt-card">
+      <div class="apt-card__badge">Obergeschoss</div>
+      <h3 class="apt-card__title">Ferienwohnung 1 <span>OG</span></h3>
+      <p class="apt-card__size">55&thinsp;m²</p>
+      <ul class="apt-card__features">
+        <li>Wohnküche</li>
+        <li>2 getrennte Schlafzimmer</li>
+        <li>Dusche, WC</li>
+      </ul>
+    </article>
+
+    <!-- FEWO 2 OG -->
+    <article class="apt-card apt-card--lg">
+      <div class="apt-card__badge">Obergeschoss · Maisonette</div>
+      <h3 class="apt-card__title">Ferienwohnung 2 <span>OG</span></h3>
+      <p class="apt-card__size">38&thinsp;m² <span class="apt-card__size-add">+ zusätzliches Schlaf- und Bad im DG</span></p>
+      <ul class="apt-card__features">
+        <li>Wohnküche</li>
+        <li>Schlafzimmer · Dusche, WC</li>
+        <li>2. Schlafzimmer &amp; 2. Dusche/WC im Dachgeschoss</li>
+        <li>Neu fertiggestellt</li>
+      </ul>
+      <p class="apt-card__note">Der zusätzliche Bereich im Dachgeschoss macht diese Wohnung ideal für Familien, die mehr Rückzug brauchen.</p>
+    </article>
+
+  </div>
+
+  <!-- INCLUDED -->
+  <div class="included">
+    <h3 class="included__title">Im Mietpreis enthalten</h3>
+    <ul class="included__list">
+      <li>
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M13 2L3 14h8l-1 8 10-12h-8z"/></svg>
+        <span>Strom, Heizung, Wasser (verbrauchsabhängig)</span>
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 7h16v10H4z"/><path d="M4 11h16"/></svg>
+        <span>Bettwäsche und Handtücher</span>
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/></svg>
+        <span>Gemeinschafts-Waschmaschine &amp; Trockner im Wirtschaftsraum</span>
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6 20V10M18 20V10M6 14h12"/><path d="M4 10h16"/></svg>
+        <span>Kinderbetten und Hochstuhl auf Anfrage</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ FARM LIFE ============ -->
+<section class="farm" id="hof">
+  <div class="farm__inner">
+
+    <div class="farm__content">
+      <p class="section-kicker section-kicker--light">— Leben am Hof</p>
+      <h2 class="section-title section-title--light">
+        Landwirtschaft<br>
+        <em>zum Anfassen.</em>
+      </h2>
+      <p class="farm__lede">
+        Auf unserem angrenzenden Bauernhof begegnen Sie Kühen, Rindern, Bullen, Kälbern, Hühnern, Schweinen und Katzen. Das Weidevieh grast auf den umliegenden Ländereien — Füttern und Melken können Sie in unseren Ställen live miterleben.
+      </p>
+
+      <ul class="farm__list">
+        <li><span>01</span>Weidevieh auf den umliegenden Wiesen</li>
+        <li><span>02</span>Füttern und Melken in den Ställen</li>
+        <li><span>03</span>Kinderspielplatz mit Schaukel &amp; Wippe</li>
+        <li><span>04</span>Basketballkorb &amp; Tischtennis</li>
+        <li><span>05</span>Liegewiese und Parkplätze am Hof</li>
+      </ul>
+    </div>
+
+    <div class="farm__visual" aria-hidden="true">
+      <div class="farm-illu">
+        <svg viewBox="0 0 300 400" fill="none" stroke="currentColor" stroke-width="1.1">
+          <!-- sky circles -->
+          <circle cx="235" cy="70" r="28" opacity="0.35"/>
+          <circle cx="235" cy="70" r="18" opacity="0.5"/>
+          <!-- horizon lines -->
+          <path d="M0 180 C 80 172, 160 188, 300 178" opacity="0.45"/>
+          <path d="M0 200 C 100 192, 180 208, 300 198" opacity="0.3"/>
+          <!-- barn -->
+          <path d="M60 280 L60 220 L120 180 L180 220 L180 280 Z"/>
+          <path d="M60 220 L180 220"/>
+          <rect x="105" y="235" width="30" height="45"/>
+          <rect x="75" y="235" width="18" height="18"/>
+          <rect x="150" y="235" width="18" height="18"/>
+          <!-- fence -->
+          <path d="M10 320 L290 320"/>
+          <path d="M10 335 L290 335"/>
+          <path d="M40 310 L40 350 M90 310 L90 350 M200 310 L200 350 M250 310 L250 350"/>
+          <!-- cow silhouette -->
+          <ellipse cx="225" cy="295" rx="28" ry="14"/>
+          <circle cx="252" cy="290" r="6"/>
+          <path d="M200 305 L200 315 M210 308 L210 318 M240 308 L240 318 M250 305 L250 315"/>
+          <!-- grass tufts -->
+          <path d="M20 360 l2 -10 l2 10 M28 360 l2 -8 l2 8"/>
+          <path d="M110 360 l2 -10 l2 10 M150 360 l2 -8 l2 8"/>
+          <path d="M270 360 l2 -10 l2 10 M280 360 l2 -8 l2 8"/>
+        </svg>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ LOCATION ============ -->
+<section class="location" id="lage">
+  <div class="location__header">
+    <p class="section-kicker">— Lage &amp; Wege</p>
+    <h2 class="section-title">Zur Nordsee in wenigen Minuten.</h2>
+    <p class="section-lede">
+      Unser Ferienhof liegt in sehr ruhiger Lage zwischen Esens und der ostfriesischen Nordseeküste.
+    </p>
+  </div>
+
+  <div class="location__grid">
+    <article class="loc-card">
+      <p class="loc-card__time">2–5 <span>Min.</span></p>
+      <h3>Kurmittelhaus</h3>
+      <p>Fahrtzeit zum Kurmittelhaus in Esens.</p>
+    </article>
+
+    <article class="loc-card loc-card--accent">
+      <p class="loc-card__time">~7 <span>Min.</span></p>
+      <h3>Nordsee &amp; Deich</h3>
+      <p>Der kürzeste Weg zum Meer — hinterm Deich mit freiem Baden, Schwimmen oder Surfen bei Hochwasser.</p>
+    </article>
+
+    <article class="loc-card">
+      <p class="loc-card__time">~12 <span>Min.</span></p>
+      <h3>Bensersiel &amp; Neuharlingersiel</h3>
+      <p>Zu den Stränden in Bensersiel oder Neuharlingersiel.</p>
+    </article>
+  </div>
+
+  <!-- MAP -->
+  <div class="location__map-wrap">
+    <div class="location__map" id="map" data-map
+         data-lat="53.6603"
+         data-lng="7.6118"
+         data-zoom="11"
+         aria-label="Karte mit der Lage des Ferienhof Oltmanns bei Esens in Ostfriesland">
+      <noscript>
+        <div class="location__map-fallback">
+          <p>Die interaktive Karte benötigt JavaScript. Der Ferienhof liegt am nördlichen Stadtrand von Esens in Ostfriesland.</p>
+        </div>
+      </noscript>
+    </div>
+    <p class="location__map-caption">
+      Kartendaten: <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">© OpenStreetMap-Mitwirkende</a> · Kacheln: <a href="https://versatiles.org" target="_blank" rel="noopener">VersaTiles</a>
+    </p>
+  </div>
+</section>
+
+<!-- ============ SEASON ============ -->
+<section class="season">
+  <div class="season__inner">
+    <div class="season__pattern" aria-hidden="true"></div>
+    <p class="section-kicker section-kicker--light">— Das ganze Jahr</p>
+    <h2 class="season__title">Ein Nordseeurlaub ist zu jeder Jahreszeit schön.</h2>
+    <p class="season__text">
+      Unsere Ferienwohnungen sind ganzjährig geöffnet. Für die Vor- und Nachsaison ist ein Preisnachlass vorgesehen. Wenn Sie weitere Informationen wünschen, rufen Sie uns bitte an oder schreiben Sie eine E-Mail.
+    </p>
+    <a href="mailto:{{ .Site.Params.email }}" class="btn btn--light">Jetzt anfragen</a>
+  </div>
+</section>
+
+{{ end }}

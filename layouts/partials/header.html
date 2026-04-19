@@ -1,0 +1,35 @@
+<header class="site-header" data-header>
+  <div class="site-header__inner">
+    <a href="{{ "/" | relURL }}" class="site-header__brand" aria-label="Ferienhof Oltmanns — Startseite">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 40 40" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.4">
+          <path d="M4 28c4-2 6-2 10 0s6 2 10 0 6-2 10 0"/>
+          <path d="M4 33c4-2 6-2 10 0s6 2 10 0 6-2 10 0"/>
+          <path d="M20 6l10 12H10z"/>
+          <path d="M14 18v6h12v-6"/>
+        </svg>
+      </span>
+      <span class="brand-text">
+        <span class="brand-text__name">Ferienhof Oltmanns</span>
+        <span class="brand-text__sub">Ostfriesland · Nordsee</span>
+      </span>
+    </a>
+
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" data-nav-toggle>
+      <span class="nav-toggle__label">Menü</span>
+      <span class="nav-toggle__icon" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </span>
+    </button>
+
+    <nav class="site-nav" id="primary-nav" data-nav>
+      <ul>
+        <li><a href="#willkommen">Willkommen</a></li>
+        <li><a href="#wohnungen">Wohnungen</a></li>
+        <li><a href="#hof">Hof & Tiere</a></li>
+        <li><a href="#lage">Lage</a></li>
+        <li><a href="#anfragen" class="is-cta">Anfragen</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>

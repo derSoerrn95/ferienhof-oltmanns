@@ -1,0 +1,34 @@
+<footer class="site-footer" id="anfragen">
+  <div class="site-footer__inner">
+
+    <div class="footer-cta">
+      <p class="footer-cta__kicker">Kontakt aufnehmen</p>
+      <h2 class="footer-cta__title">Wir freuen uns,<br>Sie als Gäste zu begrüßen.</h2>
+      <p class="footer-cta__text">Für Anfragen zu Verfügbarkeit, Preisen und Nebensaison-Rabatten schreiben Sie uns gerne eine E-Mail oder rufen Sie an.</p>
+      <a href="mailto:{{ .Site.Params.email }}" class="btn btn--primary">
+        <span>E-Mail schreiben</span>
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+
+    <div class="footer-meta">
+      <div class="footer-col">
+        <h3>Ferienhof Oltmanns</h3>
+        <p>Familie Oltmanns<br>Esens · Ostfriesland<br>Niedersachsen, Deutschland</p>
+      </div>
+      <div class="footer-col">
+        <h3>Kontakt</h3>
+        <p><a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a></p>
+      </div>
+      <div class="footer-col">
+        <h3>Saison</h3>
+        <p>Ganzjährig geöffnet<br>Preisnachlass in Vor- und Nachsaison</p>
+      </div>
+    </div>
+
+    <div class="footer-baseline">
+      <p>© {{ now.Year }} Ferienhof Oltmanns. Alle Rechte vorbehalten.</p>
+      <p class="footer-baseline__credit">Nordseeluft &nbsp;·&nbsp; Landwirtschaft live &nbsp;·&nbsp; Gastfreundschaft</p>
+    </div>
+  </div>
+</footer>
